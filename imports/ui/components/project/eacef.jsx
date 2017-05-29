@@ -1,0 +1,96 @@
+/**
+ * Created by JohnBae on 4/15/17.
+ */
+
+import React, { Component } from 'react';
+import {browserHistory} from 'react-router';
+import {Grid, Row, Col, Button, ResponsiveEmbed, Label} from 'react-bootstrap';
+
+export default class TestNavBar extends Component{
+
+    render(){
+        return(
+            <div>
+                <div className = "headerSection">
+                    <h1>Euro Asia Civil Engineering Forum (EACEF)</h1>
+                    <h3>International Conference Website for Hanyang University</h3>
+                </div>
+
+                <hr />
+
+                <p>
+                    This website was for <b>professor</b> who wanted a website done for an <b>international conference</b>
+                    as soon as possible.
+                    <br/><br/>
+                    I heavily utilized <a href="https://weebly.com" target="_blank">Weebly</a> as the criteria
+                    did not require a custom coded website. This job required <b>constant</b> communication with the
+                    professor and his associates with the design incorporating <b>familiar</b> Korean web design themes.
+                </p>
+
+                <br/>
+                    <Button style={{fontSize: "1.5rem"}}
+                            href="http://eacef2017.hanyang.ac.kr/"
+                            target="_blank">
+                        View the Website!
+                    </Button>
+                <br/>
+                <br/>
+
+                <h2 style={{marginBottom: "15px"}}>Skills</h2>
+                <div style={{width: "auto"}}>
+                    <Label>CSS</Label>&nbsp;
+                    <Label>HTML</Label>&nbsp;
+                    <Label>Javascript</Label>&nbsp;
+                    <Label>Weebly</Label>&nbsp;
+                    <Label>Paypal</Label>&nbsp;
+                    <Label>TicketTailor</Label>
+                </div>
+
+                <br/>
+                <br/>
+
+                <hr />
+
+                <h2 style={{marginBottom: "15px"}}>Screenshots</h2>
+                <Grid style = {{width: "auto"}}>
+                    <Row className="show-grid">
+                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
+                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
+                                <embed src="/assets/eacef/eacef1.png" />
+                            </ResponsiveEmbed>
+                        </Col>
+                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
+                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
+                                <embed src="/assets/eacef/eacef2.png" />
+                            </ResponsiveEmbed>
+                        </Col>
+                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
+                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
+                                <embed src="/assets/eacef/eacef3.png" />
+                            </ResponsiveEmbed>
+                        </Col>
+                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
+                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
+                                <embed src="/assets/eacef/eacef4.png" />
+                            </ResponsiveEmbed>
+                        </Col>
+                    </Row>
+                </Grid>
+
+                <br/>
+                <br/>
+
+                <Button block
+                        bsStyle="primary"
+                        onClick={()=>browserHistory.push("/home")}
+                        bsSize="large">Go Back</Button>
+
+                <br/>
+                <br/>
+
+                <br/>
+                <br/>
+            </div>
+        )
+    }
+}
