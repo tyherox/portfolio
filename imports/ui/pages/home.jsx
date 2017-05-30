@@ -143,7 +143,9 @@ class Item extends Component{
                  onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}>
                 <p className="itemContainer-title" ref="title">{this.props.title}</p>
                 <p className="itemContainer-description">{this.props.description}</p>
-                <img width="100px" height="100px" src={"/assets/"+this.props.image}/>
+                <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
+                    <embed src={"/assets/"+this.props.image} />
+                </ResponsiveEmbed>
                 <Button bsSize="small"
                         onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}
                         className="itemContainer-link"
