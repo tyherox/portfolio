@@ -31,8 +31,8 @@ export default class HomePage extends Component {
                 <hr />
 
                 <div>
-                    <div className="categoryTitle">
-                        <h2 style={{marginBottom: "15px"}}>Here's what I worked on...</h2>
+                    <div>
+                        <h2 className="categoryTitle">Here's what I worked on...</h2>
                         <FormGroup style={{ display: "none"}}>
                             <Button>
                                 Bootstrap
@@ -65,37 +65,37 @@ export default class HomePage extends Component {
                     </div>
                     <Grid style = {{width: "auto"}}>
                         <Row className="show-grid">
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Trestle"
                                       image="trestle/trestle3.png"
                                       description="Customizable Writing Application"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Bard"
                                       image="bard/bard1.png"
                                       description="IDE for Smith Interactive Fiction Engine"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Smith"
                                       image="smith/smith2.png"
                                       description="Scripting Engine for Interactive Fiction"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="EACEF"
                                       image="eacef/eacef2.png"
-                                      description="Hanyang University Conference Website"/>
+                                      description="Hanyang University Website"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Ryestory"
                                       image="ryestory/ryestory3.png"
                                       description="Website for my startup, Ryestory"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Scribe"
                                       image="scribe/scribe4.png"
                                       description="Minimalist Writing Application"/>
                             </Col>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={6}>
                                 <Item title="Keystroke Biometrics"
                                       image="trestle/trestle3.png"
                                       description="Keystroke Biometric Algorithm"/>
@@ -104,7 +104,7 @@ export default class HomePage extends Component {
                     </Grid>
                 </div>
 
-                <h2>A little bit more about me...</h2>
+                <h2 className="categoryTitle">A little bit more about me...</h2>
                 <p>I am a genuine lover of interesting problems and programming. If you have a problem you're having
                 a hard time with, I can get on it and will not stop until it is solved. In addition, as you can probably
                 tell by the website, I love practicality and minimalism in design. Hate bloated UIs!</p>
@@ -112,7 +112,7 @@ export default class HomePage extends Component {
                 <br/>
                 <br/>
 
-                <h2>So, wanna build something cool together?</h2>
+                <h2 className="categoryTitle">So, wanna build something cool together?</h2>
                 <Button
                     block
                     bsStyle="primary"
@@ -138,12 +138,12 @@ class Item extends Component{
 
     render(){
         return(
-            <div className="itemContainer">
+            <div className="itemContainer"
+
+                 onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}>
                 <p className="itemContainer-title" ref="title">{this.props.title}</p>
                 <p className="itemContainer-description">{this.props.description}</p>
-                <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                    <embed src={"/assets/"+this.props.image} />
-                </ResponsiveEmbed>
+                <img width="100px" height="100px" src={"/assets/"+this.props.image}/>
                 <Button bsSize="small"
                         onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}
                         className="itemContainer-link"

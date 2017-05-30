@@ -6,6 +6,9 @@ import React, { Component }from 'react';
 import { RouteTransition } from 'react-router-transition';
 
 import '../style/main.css';
+import '../style/fonts.css';
+import '../style/containers.css';
+import '../style/elements.css';
 
 export default class App extends Component {
 
