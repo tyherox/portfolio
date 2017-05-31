@@ -13,6 +13,14 @@ export default class HomePage extends Component {
             <div>
                 <div className = "headerSection">
                     <h1>Hi, I'm John!</h1>
+                    <img style={{
+                        position: "absolute",
+                        height: "5rem",
+                        marginRight: "10px",
+                        right: "0px",
+                        bottom: "10px",
+                        verticalAlign: "middle"
+                    }}src="/assets/carrot.png"/>
                     <h3>Full-stack developer and UI/UX geek</h3>
                 </div>
 
@@ -104,6 +112,8 @@ export default class HomePage extends Component {
                     </Grid>
                 </div>
 
+                <hr />
+
                 <h2 className="categoryTitle">A little bit more about me...</h2>
                 <p>I am a genuine lover of interesting problems and programming. If you have a problem you're having
                 a hard time with, I can get on it and will not stop until it is solved. In addition, as you can probably
@@ -111,6 +121,8 @@ export default class HomePage extends Component {
 
                 <br/>
                 <br/>
+
+                <hr />
 
                 <h2 className="categoryTitle">So, wanna build something cool together?</h2>
                 <Button

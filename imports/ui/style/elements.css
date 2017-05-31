@@ -21,6 +21,19 @@ hr{
     font-size: 1.5rem;
 }
 
+.btn-primary{
+    background: #EA005E!important;
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #c60050!important;
+}
+
+.btn-primary:active{
+    background: #ae0046!important;
+}
+
 .label{
     margin-bottom: 10px;
     display: inline-block;
