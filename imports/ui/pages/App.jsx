@@ -20,7 +20,8 @@ export default class App extends Component {
                     pathname={this.props.location.pathname}
                     atEnter={{ opacity: 0 }}
                     atLeave={{ opacity: 1 }}
-                    atActive={{ opacity: 1 }}>
+                    atActive={{ opacity: 1 }}
+                    style={{transition: "opacity 5s"}}>
                     {this.props.children}
                 </RouteTransition>
              </div>

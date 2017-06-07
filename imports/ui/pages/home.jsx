@@ -9,18 +9,17 @@ import {Grid, Row, Col, FormGroup, Button, ResponsiveEmbed} from 'react-bootstra
 export default class HomePage extends Component {
 
     render() {
+
+        window.onload = function () {
+            var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
+            console.log('Page load time is '+ loadTime / 1000.000 + " seconds");
+        }
+
         return (
             <div>
                 <div className = "headerSection">
                     <h1>Hi, I'm John!</h1>
-                    <img style={{
-                        position: "absolute",
-                        height: "5rem",
-                        marginRight: "10px",
-                        right: "0px",
-                        bottom: "10px",
-                        verticalAlign: "middle"
-                    }}src="/assets/carrot.png"/>
+                    <img id="carrot" src="/assets/carrot.png"/>
                     <h3>Full-stack developer and UI/UX geek</h3>
                 </div>
 
@@ -105,7 +104,7 @@ export default class HomePage extends Component {
                             </Col>
                             <Col xs={12} md={6}>
                                 <Item title="Keystroke Biometrics"
-                                      image="trestle/trestle3.png"
+                                      image="keystroke/keystroke1.png"
                                       description="Keystroke Biometric Algorithm"/>
                             </Col>
                         </Row>
@@ -115,9 +114,9 @@ export default class HomePage extends Component {
                 <hr />
 
                 <h2 className="categoryTitle">A little bit more about me...</h2>
-                <p>I am a genuine lover of interesting problems and programming. If you have a problem you're having
-                a hard time with, I can get on it and will not stop until it is solved. In addition, as you can probably
-                tell by the website, I love practicality and minimalism in design. Hate bloated UIs!</p>
+                <p> I am a genuine lover of programming - it's like playing with a limitless amount of Legos that actually work!
+                    In addition, as you can probably tell by the website, I love practicality and minimalism in design.
+                </p>
 
                 <br/>
                 <br/>
@@ -159,6 +158,7 @@ class Item extends Component{
                     <embed src={"/assets/"+this.props.image} />
                 </ResponsiveEmbed>
                 <Button bsSize="small"
+                        bsStyle="primary"
                         onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}
                         className="itemContainer-link"
                         ref="link">See More</Button>

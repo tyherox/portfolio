@@ -2,8 +2,17 @@ hr{
     border: 1px #e7ebee solid;
 }
 
-.btn-default{
-    font-size: 1.0rem;
+#carrot{
+    position: absolute;
+    height: 5rem;
+    marginRight: 10px;
+    right: 0px;
+    bottom: 10px;
+    verticalAlign: middle;
+}
+
+.btn{
+    font-size: 1.00rem;
     margin: 3px;
 }
 
@@ -41,7 +50,11 @@ hr{
 
 @media (max-width: 1000px){
 
-    .btn-default{
+    #carrot{
+        display: none;
+    }
+    
+    .btn{
         font-size: 2rem;
     }
 

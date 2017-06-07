@@ -8,15 +8,16 @@
 .itemContainer{
     transition: all .5s;
     height: 325px;
-    border: 1px solid transparent;
-    background: whitesmoke;
+    background: white;
+    border: 1px solid lightgray;
     padding: 10px 10px 25px;
     margin-bottom: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .itemContainer:hover{
-    background: white;
-    border: 1px solid lightgray;
+    border: 1px solid transparent;
+    background: whitesmoke;
 }
 
 .itemContainer-title{
@@ -33,9 +34,8 @@
 .itemContainer-link{
     position: absolute;
     cursor: default;
-    left: 15px;
+    left: 25px;
     bottom: 30px;
-    margin-left: 10px;
 }
 
 .spanRightButton{
