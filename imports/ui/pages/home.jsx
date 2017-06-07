@@ -128,10 +128,14 @@ export default class HomePage extends Component {
                     block
                     bsStyle="primary"
                     bsSize="large"
-                    href="mailto:silverbae@gmail.com">Heck yea!</Button>
+                    href="mailto:john.uhyb@gmail.com">Heck yea!</Button>
 
                 <br/>
                 <br/>
+
+                <p style={{textAlign: "center"}}>
+                    or message me directly at: john.uhyb@gmail.com
+                </p>
 
                 <br/>
                 <br/>
