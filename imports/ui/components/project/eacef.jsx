@@ -19,8 +19,8 @@ export default class TestNavBar extends Component{
                 <hr />
 
                 <p>
-                    This website was for <b>professor</b> who wanted a website done for an <b>international conference</b>
-                    as soon as possible.
+                    This website was for <b>professor</b> who wanted a website done for an
+                    <b>international conference</b> as soon as possible.
                     <br/><br/>
                     I heavily utilized <a href="https://weebly.com" target="_blank">Weebly</a> as the criteria
                     did not require a custom coded website. This job required <b>constant</b> communication with the

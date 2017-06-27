@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ecce97-ff99-4070-b5f6-a80327481663" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/home.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/style/containers.css" afterPath="$PROJECT_DIR$/imports/ui/style/containers.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/style/elements.css" afterPath="$PROJECT_DIR$/imports/ui/style/elements.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/style/fonts.css" afterPath="$PROJECT_DIR$/imports/ui/style/fonts.css" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +79,18 @@
       <file leaf-file-name="trestle.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/project/trestle.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="375">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eacef.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/project/eacef.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -161,7 +166,6 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/interactive/style.css" />
         <option value="$PROJECT_DIR$/imports/ui/pages/static.jsx" />
         <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/smith.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/ryestory.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/scribe.jsx" />
@@ -176,6 +180,7 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/home.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/style/fonts.css" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" />
+        <option value="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" />
       </list>
     </option>
@@ -432,12 +437,12 @@
       <workItem from="1496754478592" duration="11510000" />
       <workItem from="1497950841086" duration="773000" />
       <workItem from="1498535076512" duration="144000" />
-      <workItem from="1498535897017" duration="3986000" />
+      <workItem from="1498535897017" duration="4356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70212000" />
+    <option name="totallyTimeSpent" value="70582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -703,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/project/eacef.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/project/scribe.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -838,10 +836,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/project/eacef.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/project/trestle.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="375">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding />
         </state>
       </provider>

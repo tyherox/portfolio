@@ -39,8 +39,10 @@ export default class Trestle extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
-                    <Button href="http://www.ryestory.com/home">
-                        Visit Home Page
+                    <Button style={{fontSize: "1.5rem"}}
+                            target="_blank"
+                            href="http://www.ryestory.com/home">
+                        Visit Home Page!
                     </Button>
                 <br/>
                 <br/>
