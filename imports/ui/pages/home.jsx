@@ -164,7 +164,7 @@ class Item extends Component{
                 <Button bsSize="small"
                         bsStyle="primary"
                         onClick={()=>browserHistory.push("/project/"+this.props.title.toLowerCase())}
-                        className="itemContainer-link"
+                        style={{marginTop: "15px"}}
                         ref="link">See More</Button>
             </div>
         )

@@ -68,8 +68,7 @@ export default class TestNavBar extends Component{
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
                             <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/bard/bard3.png" />
-                            </ResponsiveEmbed>
+                                Forgot to save? Don’t worry, it’s all there.                            </ResponsiveEmbed>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
                             <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>

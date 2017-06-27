@@ -39,6 +39,9 @@ export default class Trestle extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
+                    <Button href="http://www.ryestory.com/home">
+                        Visit Home Page
+                    </Button>
                 <br/>
                 <br/>
 

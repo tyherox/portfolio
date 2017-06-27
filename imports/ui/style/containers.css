@@ -7,10 +7,9 @@
 
 .itemContainer{
     transition: all .5s;
-    height: 325px;
     background: white;
     border: 1px solid lightgray;
-    padding: 10px 10px 25px;
+    padding: 10px;
     margin-bottom: 25px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
 }
@@ -31,13 +30,6 @@
     color: dimgray;
 }
 
-.itemContainer-link{
-    position: absolute;
-    cursor: default;
-    left: 25px;
-    bottom: 30px;
-}
-
 .spanRightButton{
     float: right;
     display: inline;
@@ -52,15 +44,11 @@
     padding-top: 50px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 750px){
 
     #masterContainer{
         width: 80%;
         max-width: 80%;
-    }
-
-    .itemContainer{
-        height: 650px;
     }
 
     .itemContainer-title{
