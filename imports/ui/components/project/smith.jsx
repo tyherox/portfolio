@@ -30,8 +30,7 @@ export default class TestNavBar extends Component{
                 </p>
 
                 <br/>
-                    <Button style={{fontSize: "1.5rem"}}
-                            href="https://github.com/tyherox/smith"
+                    <Button href="https://github.com/tyherox/smith"
                             target="_blank">
                         <img style={{
                             height: "2rem",

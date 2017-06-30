@@ -11,6 +11,16 @@ hr{
     verticalAlign: middle;
 }
 
+.emptyButton,
+.emptyButton:hover,
+.emptyButton:active,
+.emptyButton:focus{
+    color: inherit;
+    background: inherit;
+    border: none!important;
+    outline: none!important;;
+}
+
 .btn{
     font-size: 1.00rem;
     margin: 3px;
@@ -27,7 +37,7 @@ hr{
 }
 
 .label-default{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .btn-primary{
@@ -48,26 +58,62 @@ hr{
     display: inline-block;
 }
 
+#languageSelection{
+    text-align: right;
+    margin-top: 25px;
+}
+
+#languageSelection-button{
+    color: dodgerblue;
+}
+
+#languageSelection-button:hover{
+    color: #EA005E;
+}
+
+.category-button{
+    color: white;
+    background: gray;
+}
+
+.category-button:hover,
+.category-button:focus,
+.category-button:active{
+    color: white!important;;
+    background: #969696!important;;
+}
+
+.category-button-selected{
+    color: white;
+    background: #EA005E;
+}
+
+.category-button-selected:hover,
+.category-button-selected:focus,
+.category-button-selected:active{
+    color: white!important;
+    background: #c60050!important;;
+}
+
+.category-clear,
+.category-clear:active,
+.category-clear:focus{
+    color: black;
+    margin-right: 15px;
+    border: gray solid 1px!important;
+    background: white;
+}
+
+.category-clear:hover{
+    color: black!important;
+    border: gray solid 1px!important;
+    background: #f0f0f0 !important;;
+}
+
+
 @media (max-width: 750px){
 
     #carrot{
         display: none;
-    }
-    
-    .btn{
-        font-size: 2rem;
-    }
-
-    .btn-lg{
-        font-size: 3rem;
-        margin: 3px;
-    }
-
-    .btn-group-sm{
-        font-size: 1.5rem;
-    }
-
-    .label-default{
-        font-size: 2rem;
     }
 }

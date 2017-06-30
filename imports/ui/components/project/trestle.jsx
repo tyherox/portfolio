@@ -29,8 +29,7 @@ export default class Trestle extends Component{
                 </p>
 
                 <br/>
-                    <Button style={{fontSize: "1.5rem"}}
-                            href="https://github.com/tyherox/trestle"
+                    <Button href="https://github.com/tyherox/trestle"
                             target="_blank">
                         <img style={{
                             height: "2rem",
@@ -39,9 +38,14 @@ export default class Trestle extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
-                    <Button style={{fontSize: "1.5rem"}}
+                    <Button inline
                             target="_blank"
                             href="http://www.ryestory.com/home">
+                        <img style={{
+                            height: "2rem",
+                            marginRight: "10px",
+                            verticalAlign: "middle"
+                        }}src="/assets/house.png"/>
                         Visit Home Page!
                     </Button>
                 <br/>

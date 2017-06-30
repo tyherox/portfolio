@@ -28,8 +28,7 @@ export default class TestNavBar extends Component{
                 </p>
 
                 <br/>
-                    <Button style={{fontSize: "1.5rem"}}
-                            href="https://github.com/tyherox/Rye-Bard"
+                    <Button href="https://github.com/tyherox/Rye-Bard"
                             target="_blank">
                         <img style={{
                             height: "2rem",
@@ -68,7 +67,8 @@ export default class TestNavBar extends Component{
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
                             <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                Forgot to save? Don’t worry, it’s all there.                            </ResponsiveEmbed>
+                                <embed src="/assets/bard/bard3.png" />
+                            </ResponsiveEmbed>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
                             <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>

@@ -28,9 +28,14 @@ export default class TestNavBar extends Component{
                 </p>
 
                 <br/>
-                    <Button style={{fontSize: "1.5rem"}}
+                    <Button inline
                             href="http://eacef2017.hanyang.ac.kr/"
                             target="_blank">
+                        <img style={{
+                            height: "2rem",
+                            marginRight: "10px",
+                            verticalAlign: "middle"
+                        }}src="/assets/house.png"/>
                         View the Website!
                     </Button>
                 <br/>

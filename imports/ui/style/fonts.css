@@ -1,5 +1,5 @@
 h1{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: 700;
 }
 
@@ -14,7 +14,7 @@ h3{
 }
 
 p{
-    font-size: 1.50rem;
+    font-size: 1.25rem;
 }
 
 b{
@@ -31,13 +31,39 @@ p a:hover{
     color: #EA005E;
 }
 
-.categoryTitle{
+.category-title {
     margin-bottom: 25px;
 }
 
+.descriptionText{
+    color: #EA005E;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 @media (max-width: 750px){
-    
-    .categoryTitle{
+
+    .category-title {
         margin-bottom: 50px;
     }
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    h1{
+        font-size: 2.0rem;
+        font-weight: 700;
+    }
+
+    h2{
+        position: relative;
+        font-size: 1.75rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        color: darkgrey;
+    }
+
 }

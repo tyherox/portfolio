@@ -13,7 +13,7 @@ export default class TestNavBar extends Component{
             <div>
                 <div className = "headerSection">
                     <h1>Ryestory</h1>
-                    <h3>Website for my Previous Startup, Ryestory</h3>
+                    <h3>Website for my Previous Startup</h3>
                 </div>
 
                 <hr />
@@ -29,7 +29,6 @@ export default class TestNavBar extends Component{
 
                 <br/>
                     <Button inline
-                            style={{fontSize: "1.5rem"}}
                             href="https://github.com/tyherox/ryestoryWebsite"
                             target="_blank">
                         <img style={{
@@ -40,9 +39,13 @@ export default class TestNavBar extends Component{
                         View on GitHub
                     </Button>
                     <Button inline
-                            style={{fontSize: "1.5rem"}}
-                        href="http://ryestory.com"
+                            href="http://ryestory.com"
                             target="_blank">
+                        <img style={{
+                            height: "2rem",
+                            marginRight: "10px",
+                            verticalAlign: "middle"
+                        }}src="/assets/house.png"/>
                         View the Website!
                     </Button>
                 <br/>
