@@ -182,8 +182,8 @@ export default class HomePage extends Component {
 
         return (
             <div style={{transition: "all .5s"}}>
-                <div id="languageSelection" style={{display: "hidden"}}>
-                    <Button className="emptyButton" id="languageSelection-button">한국어 / Korean</Button>
+                <div id="languageSelection">
+                    <Button className="emptyButton" id="languageSelection-button"></Button>
                 </div>
                 <div className = "headerSection">
                     <h1>Hi, I'm John!</h1>
