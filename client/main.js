@@ -5,7 +5,7 @@ import { applyRouterMiddleware, Router, Route, browserHistory, IndexRedirect} fr
 import { useScroll } from 'react-router-scroll';
 
 import App from '../imports/ui/pages/App.jsx';
-import Home from '../imports/ui/pages/home.jsx';
+import Home from '../imports/ui/pages/home/main.jsx';
 import Project from '../imports/ui/pages/project.jsx';
 
 Meteor.startup(() => {

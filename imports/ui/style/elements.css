@@ -71,26 +71,26 @@ hr{
     color: #EA005E;
 }
 
-.category-button{
+.category-button,
+.category-button:focus,
+.category-button:active{
     color: white;
     background: gray;
 }
 
-.category-button:hover,
-.category-button:focus,
-.category-button:active{
+.category-button:hover{
     color: white!important;;
     background: #969696!important;;
 }
 
-.category-button-selected{
+.category-button-selected,
+.category-button-selected:focus,
+.category-button-selected:active{
     color: white;
     background: #EA005E;
 }
 
-.category-button-selected:hover,
-.category-button-selected:focus,
-.category-button-selected:active{
+.category-button-selected:hover{
     color: white!important;
     background: #c60050!important;;
 }
