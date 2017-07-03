@@ -55,7 +55,7 @@ export default class HomePage extends Component {
                 <div className="container-section">
                     <h2 className="category-title">A little bit more about me...</h2>
                     <p> I am a genuine lover of programming - it's like playing with a limitless amount of Legos that actually work!
-                        In addition, as you can probably tell by the website, I love practicality and minimalism in design.
+                        And as you can probably tell by the website, I love practicality and minimalism in design.
                     </p>
                 </div>
 
