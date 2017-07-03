@@ -37,8 +37,8 @@ export default class HomePage extends Component {
 
                 <br/>
 
-                <div className="section">
-                    <p>
+                <div className="container-section">
+                    <p style={{fontSize: "1.5rem"}}>
                         I’m a programmer working mostly with <b>Java</b>, <b>Javascript</b>, and <b>R</b> and
                         strive for <b>simplicity</b> and <b>usability</b> in UI/UX design.
                         <br/><br/>
@@ -46,22 +46,23 @@ export default class HomePage extends Component {
                     </p>
                 </div>
 
-                <div className="section">
+                <div className="container-section">
                     <h2 className="category-title">Take a look at my work!</h2>
                     <Filters/>
                     <Projects/>
                 </div>
 
-                <div className="section">
+                <div className="container-section">
                     <h2 className="category-title">A little bit more about me...</h2>
                     <p> I am a genuine lover of programming - it's like playing with a limitless amount of Legos that actually work!
                         In addition, as you can probably tell by the website, I love practicality and minimalism in design.
                     </p>
                 </div>
 
-                <div className="section">
+                <div className="container-section">
                     <h2 className="category-title" style={{textAlign: "center"}}>So, wanna build something cool together?</h2>
                     <Button
+                        className="emptyButton"
                         style={{width: "75%", marginLeft: "12.5%", marginRight: "12.5%"}}
                         bsStyle="primary"
                         bsSize="large"

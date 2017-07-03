@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import {browserHistory} from 'react-router';
+import LightBox from '../../components/lightBox/main';
 import {Grid, Row, Col, Button, ResponsiveEmbed, Label} from 'react-bootstrap';
 
 export default class TestNavBar extends Component{
@@ -53,38 +54,19 @@ export default class TestNavBar extends Component{
                 <Grid style = {{width: "auto"}}>
                     <Row className="show-grid">
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/keystroke/keystroke1.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/keystroke/keystroke1.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/keystroke/keystroke2.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/keystroke/keystroke2.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/keystroke/keystroke3.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/keystroke/keystroke3.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/keystroke/keystroke4.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/keystroke/keystroke4.png"/>
                         </Col>
                     </Row>
                 </Grid>
-
-                <br/>
-                <br/>
-
-                <Button block
-                        bsStyle="primary"
-                        onClick={()=>browserHistory.push("/home")}
-                        bsSize="large">Go Back</Button>
-
-                <br/>
-                <br/>
 
                 <br/>
                 <br/>

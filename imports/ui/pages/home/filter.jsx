@@ -48,7 +48,9 @@ class Filters extends Component {
 
             SkillOptions.push(
                 <Button onClick={()=>this.handleFilter(elem)}
-                        className={selected ? "emptyButton category-button-selected" : "emptyButton category-button"}
+                        className="emptyButton"
+                        style={selected ? {transition: "all .5s", background: "#EA005E", color: "white"} :
+                        {transition: "all .5s", background: "gray", color: "white"}}
                         key={key++}>
                     {elem}
                 </Button>

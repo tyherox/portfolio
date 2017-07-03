@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import {browserHistory} from 'react-router';
+import LightBox from '../../components/lightBox/main';
 import {Grid, Row, Col, Button, ResponsiveEmbed, Label} from 'react-bootstrap';
 
 export default class TestNavBar extends Component{
@@ -28,8 +29,7 @@ export default class TestNavBar extends Component{
                 </p>
 
                 <br/>
-                    <Button inline
-                            href="https://github.com/tyherox/ryestoryWebsite"
+                    <Button href="https://github.com/tyherox/ryestoryWebsite"
                             target="_blank">
                         <img style={{
                             height: "2rem",
@@ -38,8 +38,7 @@ export default class TestNavBar extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
-                    <Button inline
-                            href="http://ryestory.com"
+                    <Button href="http://ryestory.com"
                             target="_blank">
                         <img style={{
                             height: "2rem",
@@ -69,39 +68,19 @@ export default class TestNavBar extends Component{
                 <Grid style = {{width: "auto"}}>
                     <Row className="show-grid">
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/ryestory/ryestory1.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/ryestory/ryestory1.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/ryestory/ryestory2.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/ryestory/ryestory2.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/ryestory/ryestory3.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/ryestory/ryestory3.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/ryestory/ryestory4.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/ryestory/ryestory4.png"/>
                         </Col>
                     </Row>
                 </Grid>
-
-                <br/>
-                <br/>
-
-                <Button block
-                        bsStyle="primary"
-                        onClick={()=>browserHistory.push("/home")}
-                        bsSize="large">Go Back</Button>
-
-                <br/>
-                <br/>
-
                 <br/>
                 <br/>
             </div>

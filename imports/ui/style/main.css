@@ -16,3 +16,22 @@ body{
 #render-target{
     background: #fafafa;
 }
+
+@font-face {
+    font-family: openSans;
+    src: url("/open-sans/OpenSans.ttf");
+}
+
+@font-face {
+    font-family: openSans-Bold;
+    src: url("/open-sans/OpenSans-Regular.ttf");
+}
+
+h1, h2, p, ul, li, a {
+    font-family: openSans;
+}
+
+b{
+    font-family: openSans-Bold;
+}
+

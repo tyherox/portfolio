@@ -18,7 +18,8 @@ hr{
     color: inherit;
     background: inherit;
     border: none!important;
-    outline: none!important;;
+    outline: none!important;
+    border-radius: 2px!important;
 }
 
 .btn{
@@ -42,6 +43,7 @@ hr{
 
 .btn-primary{
     background: #EA005E!important;
+    color: white;
     border: none;
 }
 

@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import {browserHistory} from 'react-router';
+import LightBox from '../../components/lightBox/main';
 import {Grid, Row, Col, Button, ResponsiveEmbed, Label} from 'react-bootstrap';
 
 export default class TestNavBar extends Component{
@@ -28,8 +29,7 @@ export default class TestNavBar extends Component{
                 </p>
 
                 <br/>
-                    <Button inline
-                            href="http://eacef2017.hanyang.ac.kr/"
+                    <Button href="http://eacef2017.hanyang.ac.kr/"
                             target="_blank">
                         <img style={{
                             height: "2rem",
@@ -60,38 +60,19 @@ export default class TestNavBar extends Component{
                 <Grid style = {{width: "auto"}}>
                     <Row className="show-grid">
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/eacef/eacef1.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/eacef/eacef1.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/eacef/eacef2.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/eacef/eacef2.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/eacef/eacef3.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/eacef/eacef3.png"/>
                         </Col>
                         <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <ResponsiveEmbed a16by9 style={{border: "solid 2px lightGray"}}>
-                                <embed src="/assets/eacef/eacef4.png" />
-                            </ResponsiveEmbed>
+                            <LightBox path="/assets/eacef/eacef4.png"/>
                         </Col>
                     </Row>
                 </Grid>
-
-                <br/>
-                <br/>
-
-                <Button block
-                        bsStyle="primary"
-                        onClick={()=>browserHistory.push("/home")}
-                        bsSize="large">Go Back</Button>
-
-                <br/>
-                <br/>
 
                 <br/>
                 <br/>

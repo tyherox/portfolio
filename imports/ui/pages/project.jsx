@@ -9,8 +9,8 @@ import Eacef from '../components/project/eacef.jsx';
 import Ryestory from '../components/project/ryestory.jsx';
 import Scribe from '../components/project/scribe.jsx';
 import KeystrokeBiometrics from '../components/project/keystrokeBiometrics.jsx';
-
-
+import {browserHistory} from 'react-router';
+import {Button} from 'react-bootstrap';
 
 export default class Project extends Component{
 
@@ -21,28 +21,50 @@ export default class Project extends Component{
             ProjectView;
         console.log("PROJECT:", project);
 
+        var next = "";
+
         switch (project){
             case "trestle" : ProjectView = Trestle;
+                next = "bard";
                 break;
             case "bard" : ProjectView = Bard;
+                next = "smith";
                 break;
             case "smith" : ProjectView = Smith;
+                next = "eacef";
                 break;
             case "eacef" : ProjectView = Eacef;
+                next = "ryestory";
                 break;
             case "ryestory" : ProjectView = Ryestory;
+                next = "scribe";
                 break;
             case "scribe" : ProjectView = Scribe;
+                next = "keystroke biometrics";
                 break;
             case "keystroke biometrics" : ProjectView = KeystrokeBiometrics;
+
                 break;
 
             default : ProjectView = Trestle;
         }
-
+        console.log("next project:", next);
+        var path = "/project/" + next;
         return(
             <div>
+                <br/>
+                <br/>
+                <button className="emptyButton"
+                   id="languageSelection-button"
+                   onClick={()=>browserHistory.push("/home")}>Back Home</button>
                 <ProjectView />
+                {next.length > 0 ? <Button onClick={()=>browserHistory.push(path)}
+                                      bsStyle="primary"
+                                      style={{float: "right"}}> Next Project: {next}</Button> : ""}
+                <Button bsStyle="primary"
+                        onClick={()=>browserHistory.push("/home")}>Back Home</Button>
+                <br/>
+                <br/>
             </div>
         )
     }
