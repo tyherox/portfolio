@@ -24,6 +24,7 @@ hr{
 
 .btn{
     font-size: 1.00rem;
+    border-radius: 2px!important;
     margin: 3px;
 }
 

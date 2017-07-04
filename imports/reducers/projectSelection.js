@@ -32,7 +32,7 @@ function projectSelection(state = DEFAULT_STATE, action) {
     switch (action.type) {
 
         case types.ADD_FILTER:
-            console.log(state);
+
             var newActiveFilters = state.get("activeFilters").push(action.payload);
             var newProjects = [];
 
@@ -43,6 +43,7 @@ function projectSelection(state = DEFAULT_STATE, action) {
                     newProjects.push(elem);
                 }
                 else {
+                    console.log("EMPTY!!! ", elem.get("title"));
                     newProjects.push("empty");
                 }
             });
@@ -52,10 +53,12 @@ function projectSelection(state = DEFAULT_STATE, action) {
             return fromJS(newState);
 
         case types.CLEAR_FILTER:
+
             var newState = {projects: availProjects, activeFilters: []};
             return fromJS(newState);
 
         case types.REMOVE_FILTER:
+
             var newActiveFilters = state.get("activeFilters").delete(state.get("activeFilters").indexOf(action.payload));
             var newProjects = [];
 

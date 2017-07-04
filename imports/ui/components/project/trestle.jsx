@@ -19,21 +19,19 @@ export default class Trestle extends Component{
 
                 <br/>
 
-                <div className="container-section">
-                    <p>
-                        Trestle is a <b>writing application</b> that allows users to <b>build</b> their own writing environment by
-                        moving and resizing <b>widgets</b>.
-                        <br/><br/>
-                        Besides the writing widgets, other widgets like the <b>time</b> and <b>note</b> widget
-                        allows additional features to be available. Utilizing widgets as the building block
-                        of the application created feature <b>compartmentalization</b> and
-                        consequently, a <b>minimalist</b> and <b>practical</b> design.
-                    </p>
-                </div>
+                <p>
+                    Trestle is a <b>writing application</b> that allows users to <b>build</b> their own writing environment by
+                    moving and resizing <b>widgets</b>.
+                    <br/><br/>
+                    Besides the writing widgets, other widgets like the <b>time</b> and <b>note</b> widget
+                    allows additional features to be available. Utilizing widgets as the building block
+                    of the application created feature <b>compartmentalization</b> and
+                    consequently, a <b>minimalist</b> and <b>practical</b> design.
+                </p>
 
                 <br/>
 
-                <div className="container-section">
+                <div>
 
                     <h2 style={{marginBottom: "15px"}}>Skills and Tools</h2>
                     <div style={{width: "auto"}}>

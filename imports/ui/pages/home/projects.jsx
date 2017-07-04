@@ -24,9 +24,9 @@ class Projects extends Component {
 
     render() {
 
-        var key = 0,
-            empty = 0;
+        var empty = 0;
         var Projects = this.props.projects.map(function(elem){
+            console.log(elem);
             if(elem!="empty")
             return(
                 <Col xs={12} md={6} key={elem.get("title")}>
@@ -41,7 +41,7 @@ class Projects extends Component {
         return (
             <Grid style = {{width: "auto"}}>
                 <Row>
-                    <FlipMove duration={500} easing="ease-out" enterAnimation="fade" leaveAnimation="fade">
+                    <FlipMove duration={250} easing="ease-out" enterAnimation="fade" leaveAnimation="fade">
                         {Projects}
                     </FlipMove>
                     {Projects.size==empty ? <p style={{textAlign: "center"}}>Sorry, no projects fit this criteria!</p> : ""}
@@ -60,9 +60,7 @@ function selectorFactory(dispatch) {
             projects: nextState.get("projects"),
             reduxActions: actions,
         };
-        if (nextResult.projects != result.projects){
-            result = nextResult;
-        }
+        result = nextResult;
         return result
     }
 }
