@@ -19,7 +19,6 @@ export default class Project extends Component{
 
         var project = this.props.routeParams.id,
             ProjectView;
-        console.log("PROJECT:", project);
 
         var next = "";
 
@@ -48,15 +47,16 @@ export default class Project extends Component{
 
             default : ProjectView = Trestle;
         }
-        console.log("next project:", next);
+
         var path = "/project/" + next;
         return(
             <div>
                 <br/>
                 <br/>
                 <button className="emptyButton"
-                   id="languageSelection-button"
-                   onClick={()=>browserHistory.push("/home")}>Back Home</button>
+                        style={{marginLeft: "0!important"}}
+                        id="languageSelection-button"
+                        onClick={()=>browserHistory.push("/home")}>Back Home</button>
                 <ProjectView />
                 {next.length > 0 ? <Button onClick={()=>browserHistory.push(path)}
                                       bsStyle="primary"

@@ -38,7 +38,6 @@ class Filters extends Component {
 
     render() {
 
-        console.log(this.props.activeFilters);
         var SkillOptions = [],
             key = 0;
 

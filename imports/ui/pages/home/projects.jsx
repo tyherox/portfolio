@@ -26,7 +26,7 @@ class Projects extends Component {
 
         var empty = 0;
         var Projects = this.props.projects.map(function(elem){
-            console.log(elem);
+
             if(elem!="empty")
             return(
                 <Col xs={12} md={6} key={elem.get("title")}>
