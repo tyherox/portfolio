@@ -12,7 +12,7 @@ export default projects = fromJS([
         title: "Trestle",
         skills: [SKILLS.CSS, SKILLS.DRAFT_JS, SKILLS.ELECTRON, SKILLS.GULP, SKILLS.IMMUTABLE_JS, SKILLS.INTERACT_JS,
             SKILLS.JAVASCRIPT, SKILLS.NODE_JS, SKILLS.REACT, SKILLS.REDUX],
-        image: "trestle/trestle3.png",
+        image: "trestle/gallery3.png",
         description: "Customizable Writing Application"
     },
     {

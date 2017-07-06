@@ -4,7 +4,7 @@
 
 export const BOOTSTRAP = "Bootstrap";
 export const CSS = "CSS";
-export const DRAFT_JS = "Draft Js";
+export const DRAFT_JS = "Draft JS";
 export const ELECTRON = "Electron";
 export const GULP = "Gulp";
 export const HTML = "HTML";

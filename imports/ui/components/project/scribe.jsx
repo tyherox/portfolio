@@ -17,17 +17,24 @@ export default class TestNavBar extends Component{
                     <h3>Minimalist Writing App Written in Java</h3>
                 </div>
 
-                <hr />
+                <br />
 
-                <p>
-                    Scribe is a <b>minimalist</b> yet <b>practical</b> writing application that enhances <b>focus</b>.
-                    <br/><br/>
-                    It was written fully in Java and boasted features such as variety of themes, custom spellchecking,
-                    custom scrollbars, <b>sentence focus</b> and more. It was a project that required a lot of design
-                    and illustrations.
-                </p>
+                <div className="project-section">
 
-                <br/>
+                    <h2 className="category-title">About</h2>
+
+                    <br/>
+
+                    <p>
+                        Scribe is a <b>minimalist</b> yet <b>practical</b> writing application that enhances <b>focus</b>.
+                        <br/><br/>
+                        It was written fully in Java and boasted features such as variety of themes, custom spellchecking,
+                        custom scrollbars, <b>sentence focus</b> and more. It was a project that required a lot of design
+                        and illustrations.
+                    </p>
+
+                    <br/>
+
                     <Button href="https://github.com/tyherox/Scribe"
                             target="_blank">
                         <img style={{
@@ -37,38 +44,51 @@ export default class TestNavBar extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
-                <br/>
-                <br/>
 
-                <h2 style={{marginBottom: "15px"}}>Skills</h2>
-                <div style={{width: "auto"}}>
-                    <Label>Java</Label>&nbsp;
-                    <Label>Java Swing</Label>&nbsp;
-                    <Label>Foolishly custom coded everything...</Label>
+                    <br/>
+
                 </div>
 
-                <br/>
-                <br/>
+                <div className="project-section">
 
-                <hr />
+                    <h2 style={{marginBottom: "15px"}}>Skills</h2>
 
-                <h2 style={{marginBottom: "15px"}}>Screenshots</h2>
-                <Grid style = {{width: "auto"}}>
-                    <Row className="show-grid">
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/scribe/scribe1.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/scribe/scribe2.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/scribe/scribe3.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/scribe/scribe4.png"/>
-                        </Col>
-                    </Row>
-                </Grid>
+                    <br/>
+
+                    <div style={{width: "auto"}}>
+                        <Label>Java</Label>&nbsp;
+                        <Label>Java Swing</Label>&nbsp;
+                        <Label>Foolishly custom coded everything...</Label>
+                    </div>
+
+                    <br/>
+
+                </div>
+
+                <div className="project-section">
+
+                    <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>December 2016</p>
+                    <h2 className="category-title">Final Product</h2>
+
+                    <br/>
+
+                    <Grid style = {{width: "auto"}}>
+                        <Row className="show-grid">
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/scribe/scribe1.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/scribe/scribe2.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/scribe/scribe3.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/scribe/scribe4.png"/>
+                            </Col>
+                        </Row>
+                    </Grid>
+                </div>
 
                 <br/>
                 <br/>

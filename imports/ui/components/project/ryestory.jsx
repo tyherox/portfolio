@@ -17,18 +17,25 @@ export default class TestNavBar extends Component{
                     <h3>Website for my Previous Startup</h3>
                 </div>
 
-                <hr />
+                <br />
+                
+                <div className="project-section">
+                   
+                    <h2 className="category-title">About</h2>
 
-                <p>
-                    Ryestory was a <b>startup</b> I founded with a friend a year ago.
+                    <br/>
+                    
+                    <p>
+                        Ryestory was a <b>startup</b> I founded with a friend a year ago.
 
-                    We created the foundation of products like Trestle, Scribe, Smith, and Bard but unfortunately
-                    never got the chance to commercialize it. This was the website we created to <b>promote Trestle</b>, our
-                    latest product for an Indiegogo campaign. It utilized a brand new library we found called <b>Meteor JS</b>
-                    that allowed for quick and <b>easy prototyping</b>.
-                </p>
+                        We created the foundation of products like Trestle, Scribe, Smith, and Bard but unfortunately
+                        never got the chance to commercialize it. This was the website we created to <b>promote Trestle</b>, our
+                        latest product for an Indiegogo campaign. It utilized a brand new library we found called <b>Meteor JS</b>
+                        that allowed for quick and <b>easy prototyping</b>.
+                    </p>
 
-                <br/>
+                    <br/>
+                    
                     <Button href="https://github.com/tyherox/ryestoryWebsite"
                             target="_blank">
                         <img style={{
@@ -47,40 +54,56 @@ export default class TestNavBar extends Component{
                         }}src="/assets/house.png"/>
                         View the Website!
                     </Button>
-                <br/>
-                <br/>
-
-                <h2 style={{marginBottom: "15px"}}>Skills</h2>
-                <div style={{width: "auto"}}>
-                    <Label>Bootstrap</Label>&nbsp;
-                    <Label>CSS</Label>&nbsp;
-                    <Label>Javascript</Label>&nbsp;
-                    <Label>Meteor JS</Label>&nbsp;
-                    <Label>MongoDB</Label>
+                    
+                    <br/>
+                    
                 </div>
 
-                <br/>
-                <br/>
+                <div className="project-section">
 
-                <hr />
+                    <h2 style={{marginBottom: "15px"}}>Skills</h2>
+                    
+                    <br/>
+                    
+                    <div style={{width: "auto"}}>
+                        <Label>Bootstrap</Label>&nbsp;
+                        <Label>CSS</Label>&nbsp;
+                        <Label>Javascript</Label>&nbsp;
+                        <Label>Meteor JS</Label>&nbsp;
+                        <Label>MongoDB</Label>
+                    </div>
 
-                <h2 style={{marginBottom: "15px"}}>Screenshots</h2>
-                <Grid style = {{width: "auto"}}>
-                    <Row className="show-grid">
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/ryestory/ryestory1.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/ryestory/ryestory2.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/ryestory/ryestory3.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/ryestory/ryestory4.png"/>
-                        </Col>
-                    </Row>
-                </Grid>
+                    <br/>
+
+                </div>
+
+                <div className="project-section">
+
+                    <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>March 2017</p>
+                    <h2 className="category-title">Final Product</h2>
+
+                    <br/>
+                    
+                    <Grid style = {{width: "auto"}}>
+                        <Row className="show-grid">
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/ryestory/ryestory1.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/ryestory/ryestory2.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/ryestory/ryestory3.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/ryestory/ryestory4.png"/>
+                            </Col>
+                        </Row>
+                    </Grid>
+
+                </div>
+
+                
                 <br/>
                 <br/>
             </div>

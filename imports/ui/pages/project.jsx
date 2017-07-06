@@ -54,8 +54,8 @@ export default class Project extends Component{
                 <br/>
                 <br/>
                 <button className="emptyButton"
-                        style={{marginLeft: "0!important"}}
                         id="languageSelection-button"
+                        style={{marginLeft: "0px", paddingLeft: "0px"}}
                         onClick={()=>browserHistory.push("/home")}>Back Home</button>
                 <ProjectView />
                 {next.length > 0 ? <Button onClick={()=>browserHistory.push(path)}

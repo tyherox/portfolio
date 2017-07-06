@@ -15,6 +15,7 @@ h3{
 
 p{
     font-size: 1.25rem;
+    padding: 5px;
 }
 
 b{
@@ -33,7 +34,6 @@ p a:hover{
 
 .category-title {
     margin-bottom: 25px;
-    font-weight: 600;
 }
 
 .descriptionText{
@@ -42,10 +42,18 @@ p a:hover{
     font-weight: 600;
 }
 
+.project-story{
+    padding-left: 25px;
+}
+
 @media (max-width: 750px){
 
     .category-title {
         margin-bottom: 50px;
+    }
+
+    .project-story{
+        padding-left: 0px;
     }
 
     p{

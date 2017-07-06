@@ -17,17 +17,24 @@ export default class TestNavBar extends Component{
                     <h3>Optimization of 2009 Keystroke Biometrics Study</h3>
                 </div>
 
-                <hr />
+                <br />
 
-                <p>
-                    This research was done with <a href="https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion09.pdf" target="_blank">
-                    Carnegie Melon's 2009 publication</a> of <b>anomaly detection algorithms</b> for keystroke dynamics.
-                    <br/><br/>
-                    The optimization that I came up with was a tweak in variable for the <b>Mahalanobis distance</b>. It resulted
-                    in an accuracy increase by <b>1.7%</b>.
-                </p>
+                <div className="project-section">
 
-                <br/>
+                    <h2 className="category-title">About</h2>
+
+                    <br/>
+
+                    <p>
+                        This research was done with <a href="https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion09.pdf" target="_blank">
+                        Carnegie Melon's 2009 publication</a> of <b>anomaly detection algorithms</b> for keystroke dynamics.
+                        <br/><br/>
+                        The optimization that I came up with was a tweak in variable for the <b>Mahalanobis distance</b>. It resulted
+                        in an accuracy increase by <b>1.7%</b>.
+                    </p>
+
+                    <br/>
+
                     <Button href="https://github.com/tyherox/Keystroke-Dynamics"
                             target="_blank">
                         <img style={{
@@ -37,36 +44,43 @@ export default class TestNavBar extends Component{
                         }}src="/assets/github.png"/>
                         View on GitHub
                     </Button>
-                <br/>
-                <br/>
 
-                <h2 style={{marginBottom: "15px"}}>Skills</h2>
-                <div style={{width: "auto"}}>
-                    <Label>R</Label>&nbsp;
+                    <br/>
+
                 </div>
 
-                <br/>
-                <br/>
+                <div className="project-section">
 
-                <hr />
+                    <h2 style={{marginBottom: "15px"}}>Skills</h2>
 
-                <h2 style={{marginBottom: "15px"}}>Screenshots</h2>
-                <Grid style = {{width: "auto"}}>
-                    <Row className="show-grid">
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/keystroke/keystroke1.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/keystroke/keystroke2.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/keystroke/keystroke3.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/keystroke/keystroke4.png"/>
-                        </Col>
-                    </Row>
-                </Grid>
+                    <br/>
+
+                    <div style={{width: "auto"}}>
+                        <Label>R</Label>&nbsp;
+                    </div>
+
+                    <br/>
+
+                </div>
+
+                <div className="project-section">
+
+                    <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>June 2016</p>
+                    <h2 className="category-title">Final Product</h2>
+
+                    <br/>
+
+                    <Grid style = {{width: "auto"}}>
+                        <Row className="show-grid">
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/keystroke/keystroke1.png"/>
+                            </Col>
+                        </Row>
+                    </Grid>
+
+                </div>
+
+
 
                 <br/>
                 <br/>

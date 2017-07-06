@@ -17,18 +17,21 @@ export default class TestNavBar extends Component{
                     <h3>International Conference Website for Hanyang University</h3>
                 </div>
 
-                <hr />
+                <br />
 
-                <p>
-                    This website was for <b>professor</b> who wanted a website done for an
-                    <b>international conference</b> as soon as possible.
-                    <br/><br/>
-                    I heavily utilized <a href="https://weebly.com" target="_blank">Weebly</a> as the criteria
-                    did not require a custom coded website. This job required <b>constant</b> communication with the
-                    professor and his associates with the design incorporating <b>familiar</b> Korean web design themes.
-                </p>
+                <div className="project-section">
 
-                <br/>
+                    <p>
+                        This website was for <b>professor</b> who wanted a website done for an
+                        <b>international conference</b> as soon as possible.
+                        <br/><br/>
+                        I heavily utilized <a href="https://weebly.com" target="_blank">Weebly</a> as the criteria
+                        did not require a custom coded website. This job required <b>constant</b> communication with the
+                        professor and his associates with the design incorporating <b>familiar</b> Korean web design themes.
+                    </p>
+
+                    <br/>
+
                     <Button href="http://eacef2017.hanyang.ac.kr/"
                             target="_blank">
                         <img style={{
@@ -38,41 +41,53 @@ export default class TestNavBar extends Component{
                         }}src="/assets/house.png"/>
                         View the Website!
                     </Button>
-                <br/>
-                <br/>
 
-                <h2 style={{marginBottom: "15px"}}>Skills</h2>
-                <div style={{width: "auto"}}>
-                    <Label>CSS</Label>&nbsp;
-                    <Label>HTML</Label>&nbsp;
-                    <Label>Javascript</Label>&nbsp;
-                    <Label>Weebly</Label>&nbsp;
-                    <Label>Paypal</Label>&nbsp;
-                    <Label>TicketTailor</Label>
+                    <br/>
+
                 </div>
 
-                <br/>
-                <br/>
+                <div className="project-section">
 
-                <hr />
+                    <h2 style={{marginBottom: "15px"}}>Skills</h2>
 
-                <h2 style={{marginBottom: "15px"}}>Screenshots</h2>
-                <Grid style = {{width: "auto"}}>
-                    <Row className="show-grid">
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/eacef/eacef1.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/eacef/eacef2.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/eacef/eacef3.png"/>
-                        </Col>
-                        <Col xs={12} md={6} style={{marginBottom: "25px"}}>
-                            <LightBox path="/assets/eacef/eacef4.png"/>
-                        </Col>
-                    </Row>
-                </Grid>
+                    <br/>
+
+                    <div style={{width: "auto"}}>
+                        <Label>CSS</Label>&nbsp;
+                        <Label>HTML</Label>&nbsp;
+                        <Label>Javascript</Label>&nbsp;
+                        <Label>Weebly</Label>&nbsp;
+                        <Label>Paypal</Label>&nbsp;
+                        <Label>TicketTailor</Label>
+                    </div>
+
+                    <br/>
+
+                </div>
+
+                <div className="project-section">
+
+                    <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>In Progress</p>
+                    <h2 className="category-title">Final Product</h2>
+
+                    <Grid style = {{width: "auto"}}>
+                        <Row className="show-grid">
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/eacef/eacef1.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/eacef/eacef2.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/eacef/eacef3.png"/>
+                            </Col>
+                            <Col xs={12} md={6} className="project-item-list">
+                                <LightBox path="/assets/eacef/eacef4.png"/>
+                            </Col>
+                        </Row>
+                    </Grid>
+
+                </div>
 
                 <br/>
                 <br/>
