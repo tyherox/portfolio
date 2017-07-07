@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ecce97-ff99-4070-b5f6-a80327481663" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/trestle/brainstorm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/trestle/gallery1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/trestle/gallery2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/trestle/gallery3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/trestle/gallery4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imports/ui/components/lightBox/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/trestle/trestle1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/trestle/trestle2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/trestle/trestle3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/trestle/trestle4.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/eacef/eacef2.png" afterPath="$PROJECT_DIR$/public/assets/eacef/eacef2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/constants/availProjects.js" afterPath="$PROJECT_DIR$/imports/constants/availProjects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/constants/skills.js" afterPath="$PROJECT_DIR$/imports/constants/skills.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/lightBox/main.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/lightBox/main.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/keystrokeBiometrics.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/keystrokeBiometrics.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/ryestory.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/ryestory.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/scribe.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/scribe.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/smith.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/smith.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/project.jsx" afterPath="$PROJECT_DIR$/imports/ui/pages/project.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/style/containers.css" afterPath="$PROJECT_DIR$/imports/ui/style/containers.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/style/fonts.css" afterPath="$PROJECT_DIR$/imports/ui/style/fonts.css" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +61,8 @@
       <file leaf-file-name="trestle.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/project/trestle.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+            <state relative-caret-position="380">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#43#84#0" expanded="true" />
               </folding>
@@ -96,7 +73,7 @@
       <file leaf-file-name="smith.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/project/smith.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="1200">
               <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
               <folding />
             </state>
@@ -203,7 +180,6 @@
         <option value="$PROJECT_DIR$/imports/ui/style/fonts.css" />
         <option value="$PROJECT_DIR$/imports/constants/availProjects.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/lightBox/style.css" />
-        <option value="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/lightBox/main.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/keystrokeBiometrics.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/bard.jsx" />
@@ -211,6 +187,7 @@
         <option value="$PROJECT_DIR$/imports/ui/components/project/ryestory.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/eacef.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/project/smith.jsx" />
+        <option value="$PROJECT_DIR$/imports/ui/components/project/trestle.jsx" />
       </list>
     </option>
   </component>
@@ -253,14 +230,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -372,12 +342,12 @@
       <workItem from="1498535897017" duration="4957000" />
       <workItem from="1498627118226" duration="4704000" />
       <workItem from="1498759393359" duration="18687000" />
-      <workItem from="1498876742479" duration="41496000" />
+      <workItem from="1498876742479" duration="42154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136070000" />
+    <option name="totallyTimeSpent" value="136728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -773,7 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/project/smith.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="1200">
           <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
           <folding />
         </state>
@@ -781,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/project/trestle.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+        <state relative-caret-position="380">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
           </folding>
