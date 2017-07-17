@@ -16,6 +16,7 @@ h3{
 p{
     font-size: 1.25rem;
     padding: 5px;
+    line-height: 1.75;
 }
 
 b{
@@ -32,7 +33,30 @@ p a:hover{
     color: #EA005E;
 }
 
+.sectionTitle{
+    border-bottom: 5px solid #EA005E;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sectionTitle-alt{
+    border-bottom: 5px solid dodgerblue;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sectionSubTitle{
+    margin: 5px 5px 5px 0px;
+}
+
 .category-title {
+    margin-bottom: 25px;
+}
+
+.project-sectionTitle{
+    color: dodgerblue;
     margin-bottom: 25px;
 }
 
@@ -46,10 +70,14 @@ p a:hover{
     padding-left: 25px;
 }
 
+.smallText{
+    font-size: 1.0rem;
+}
+
 @media (max-width: 750px){
 
     .category-title {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .project-story{

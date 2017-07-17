@@ -62,7 +62,7 @@ class Filters extends Component {
 
                     {this.props.activeFilters.size == 0 ?
                         <div>
-                            <p className="descriptionText">Filters: </p>
+                            <p className="descriptionText">Choose a Filter: </p>
                         </div>
                         :
                         <div>

@@ -2,6 +2,7 @@
  * Created by JohnBae on 7/1/17.
  */
 
+export const AWS_S3 = "Amazon S3"
 export const BOOTSTRAP = "Bootstrap";
 export const CSS = "CSS";
 export const DRAFT_JS = "Draft JS";

@@ -3,7 +3,7 @@
  */
 
 import * as types from '../constants/actionTypes';
-import availProjects from '../constants/availProjects';
+import availProjects from '../constants/projects/main';
 import {fromJS} from 'immutable';
 
 const DEFAULT_STATE = fromJS({
@@ -11,30 +11,18 @@ const DEFAULT_STATE = fromJS({
     activeFilters: []
 });
 
-function destructiveIntersection(a, b)
-{
-    var result = [];
-    while( a.length > 0 && b.length > 0 )
-    {
-        if      (a[0] < b[0] ){ a.shift(); }
-        else if (a[0] > b[0] ){ b.shift(); }
-        else /* they're equal */
-        {
-            result.push(a.shift());
-            b.shift();
-        }
-    }
-
-    return result;
-}
-
 function projectSelection(state = DEFAULT_STATE, action) {
+
+    var newActiveFilters,
+        newProjects,
+        newState;
+
     switch (action.type) {
 
         case types.ADD_FILTER:
 
-            var newActiveFilters = state.get("activeFilters").push(action.payload);
-            var newProjects = [];
+            newActiveFilters = state.get("activeFilters").push(action.payload);
+            newProjects = [];
 
             availProjects.forEach(function (elem) {
                 var usedSkills = elem.get("skills");
@@ -43,24 +31,23 @@ function projectSelection(state = DEFAULT_STATE, action) {
                     newProjects.push(elem);
                 }
                 else {
-                    console.log("EMPTY!!! ", elem.get("title"));
                     newProjects.push("empty");
                 }
             });
 
-            var newState = {projects: newProjects, activeFilters: newActiveFilters};
+            newState = {projects: newProjects, activeFilters: newActiveFilters};
 
             return fromJS(newState);
 
         case types.CLEAR_FILTER:
 
-            var newState = {projects: availProjects, activeFilters: []};
+            newState = {projects: availProjects, activeFilters: []};
             return fromJS(newState);
 
         case types.REMOVE_FILTER:
 
-            var newActiveFilters = state.get("activeFilters").delete(state.get("activeFilters").indexOf(action.payload));
-            var newProjects = [];
+            newActiveFilters = state.get("activeFilters").delete(state.get("activeFilters").indexOf(action.payload));
+            newProjects = [];
 
             availProjects.forEach(function (elem) {
                 var usedSkills = elem.get("skills");
@@ -73,7 +60,7 @@ function projectSelection(state = DEFAULT_STATE, action) {
                 }
             });
 
-            var newState = {projects: newProjects, activeFilters: newActiveFilters};
+            newState = {projects: newProjects, activeFilters: newActiveFilters};
 
             return fromJS(newState);
 

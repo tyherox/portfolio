@@ -27,12 +27,10 @@ export default class TestNavBar extends Component{
                     <p>
                         Smith was a <b>scripting language</b> I created to easily build
                         <a href="https://en.wikipedia.org/wiki/Interactive_fiction" target="_blank"> interactive fiction</a> and
-                        interactive text games.
-                        <br/> <br/>
-                        It was created to be <b>easy</b> for non-programmers but offered interesting features like <b>timed</b> decisions,
-                        random <b>probability</b> in user's choices, <b>if statements</b>, and others to allow writers to create
-                        engaging novels. The first novel to be released will be <b>Thatcher</b> which is still in the works.
-                        It featured an online registration and transaction system.
+                        interactive text games. It was created to be <b>easy</b> for non-programmers but offered interesting
+                        features like <b>timed</b> decisions, random <b>probability</b> in user's choices, <b>if statements</b>,
+                        and others to allow writers to create engaging novels. The first novel to be released will
+                        be <b>Thatcher</b> which is still in the works. It featured an online registration and transaction system.
                     </p>
 
                     <br/>

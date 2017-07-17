@@ -2,13 +2,8 @@
  * Created by JohnBae on 5/26/17.
  */
 import React, { Component } from 'react';
-import Trestle from '../components/project/trestle.jsx';
-import Bard from '../components/project/bard.jsx';
-import Smith from '../components/project/smith.jsx';
-import Eacef from '../components/project/eacef.jsx';
-import Ryestory from '../components/project/ryestory.jsx';
-import Scribe from '../components/project/scribe.jsx';
-import KeystrokeBiometrics from '../components/project/keystrokeBiometrics.jsx';
+import projects from '../../constants/projects/main';
+import ProjectView from '../components/project/main'
 import {browserHistory} from 'react-router';
 import {Button} from 'react-bootstrap';
 
@@ -17,38 +12,32 @@ export default class Project extends Component{
 
     render(){
 
-        var project = this.props.routeParams.id,
-            ProjectView;
+        var projectName = this.props.routeParams.id;
+
+        var selectedProject = projects.find(function(project){
+            return project.get("title").toLowerCase() == projectName;
+        });
+
+        var selectedIndex = projects.indexOf(selectedProject);
+
+        var title = selectedProject.get("title"),
+            description = selectedProject.get('description'),
+            about = selectedProject.get('about'),
+            skills = selectedProject.get('skills'),
+            content = selectedProject.get('content'),
+            githubLink = selectedProject.get('githubLink'),
+            homeLink = selectedProject.get('homeLink');
 
         var next = "";
+        var nextIndex = projects.findIndex(function(project){
+            return projects.indexOf(project) == selectedIndex + 1;
+        });
 
-        switch (project){
-            case "trestle" : ProjectView = Trestle;
-                next = "bard";
-                break;
-            case "bard" : ProjectView = Bard;
-                next = "smith";
-                break;
-            case "smith" : ProjectView = Smith;
-                next = "eacef";
-                break;
-            case "eacef" : ProjectView = Eacef;
-                next = "ryestory";
-                break;
-            case "ryestory" : ProjectView = Ryestory;
-                next = "scribe";
-                break;
-            case "scribe" : ProjectView = Scribe;
-                next = "keystroke biometrics";
-                break;
-            case "keystroke biometrics" : ProjectView = KeystrokeBiometrics;
+        var nextProject = projects.get(nextIndex).get("title");
 
-                break;
+        console.log(nextProject);
 
-            default : ProjectView = Trestle;
-        }
-
-        var path = "/project/" + next;
+        var path = "/project/" + nextProject.toLowerCase();
         return(
             <div>
                 <br/>
@@ -57,10 +46,16 @@ export default class Project extends Component{
                         id="languageSelection-button"
                         style={{marginLeft: "0px", paddingLeft: "0px"}}
                         onClick={()=>browserHistory.push("/home")}>Back Home</button>
-                <ProjectView />
-                {next.length > 0 ? <Button onClick={()=>browserHistory.push(path)}
+                <ProjectView title={title}
+                             description={description}
+                             about={about}
+                             skills={skills}
+                             githubLink={githubLink}
+                             homeLink={homeLink}
+                             content={content}/>
+                {nextProject.length > 0 ? <Button onClick={()=>browserHistory.push(path)}
                                       bsStyle="primary"
-                                      style={{float: "right"}}> Next Project: {next}</Button> : ""}
+                                      style={{float: "right"}}> Next Project: {nextProject}</Button> : ""}
                 <Button bsStyle="primary"
                         onClick={()=>browserHistory.push("/home")}>Back Home</Button>
                 <br/>
