@@ -39,7 +39,7 @@ export default class HomePage extends Component {
 
                 <div className="container-section">
                     <p style={{fontSize: "1.5rem"}}>
-                        I’m a programmer working mostly with <b>Java</b>, <b>Javascript</b>, and <b>R</b> and
+                        I’m a programmer working mostly with <b>Java</b> and <b>Javascript</b> and
                         strive for <b>simplicity</b> and <b>usability</b> in UI/UX design.
                         <br/><br/>
                         Oh, and I'm a huge fan of <b>video games</b>, <b>The Lord of the Rings</b>, and <b>Star Wars</b>.

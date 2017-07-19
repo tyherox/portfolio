@@ -154,7 +154,7 @@ var techOne =
                 <li>When data was updated, it was hard to tell which component should get <b>re-rendered</b></li>
             </ol>
 
-            <br/><br/>
+            <br/>
 
             React solved this in a rather flexible manner as we could slowly adopt the library into our code.
             React's usage of <b>JSX</b> helped us with our first problem while their <b>reconciliation</b> features helped us with our second.

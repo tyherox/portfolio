@@ -13,6 +13,7 @@ var about =
             It was written fully in Java and boasted features such as multiple themes, custom spellchecking,
             custom scrollbars, <b>sentence focus</b> and more.
         </p>
+
         <br/>
 
         <hr/>
@@ -101,9 +102,11 @@ var techTwo =
         <br/> <br/>
 
         <p style={{textAlign:"center", filter: "brightness(.95)"}}>
-            <img style={{height: "250px"}}
+            <img style={{width: "100%", maxWidth: "350px"}}
                  src="/assets/scribe/scribeSpell.gif"/>
         </p>
+
+        <br/>
 
         <p>
             A <b>hash table</b> was used to store the around 100,000 words and a thread constantly checked spelling of words against this table.
@@ -130,7 +133,7 @@ var techThree =
             <br/><br/>
 
             <p style={{textAlign:"center", filter: "brightness(.95)"}}>
-                <img style={{height: "250px"}}
+                <img style={{width: "100%", maxWidth: "350px"}}
                      src="/assets/scribe/carrot.png"/>
                 <p className="smallText">Say hi to Carrot!</p>
             </p>
@@ -141,7 +144,7 @@ var techThree =
 
             <br/> <br/>
 
-            <LightBox path="/assets/scribe/rainSkies.png"/>
+            <LightBox path="/assets/scribe/rainySkies.png"/>
 
         </p>
 

@@ -95,7 +95,7 @@ var techOne =
         <br/><br/>
 
         <p style={{textAlign:"center", filter: "brightness(.95)"}}>
-            <img style={{height: "250px"}}
+            <img style={{width: "100%", maxWidth: "350px"}}
                  src="/assets/bard/crossplatformJava.jpg"/>
             <p className="smallText">Differences in handling multiple tabs</p>
         </p>
@@ -126,7 +126,7 @@ var techTwo =
         <br/> <br/>
 
         <p style={{textAlign:"center", filter: "brightness(.95)"}}>
-            <img style={{height: "250px"}}
+            <img style={{width: "100%", maxWidth: "350px"}}
                  src="/assets/bard/bardDemo.gif"/>
             <p className="smallText">Block scope and syntax coloring</p>
         </p>

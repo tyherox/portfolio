@@ -17,7 +17,6 @@ export const JAVASCRIPT = "Javascript";
 export const METEOR_JS = "Meteor JS";
 export const MONGO_DB= "Mongo DB";
 export const NODE_JS = "Node JS";
-export const R = "R";
 export const REACT = "React";
 export const REDUX = "Redux";
 export const WEEBLY = "Weebly";
