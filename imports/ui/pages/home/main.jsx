@@ -26,9 +26,6 @@ export default class HomePage extends Component {
 
         return (
             <div style={{transition: "all .5s"}}>
-                <div id="languageSelection">
-                    <Button className="emptyButton" id="languageSelection-button"/>
-                </div>
                 <div className = "headerSection">
                     <h1>Hi, I'm John!</h1>
                     <img id="carrot" src="/assets/carrot.png"/>
@@ -38,7 +35,7 @@ export default class HomePage extends Component {
                 <br/>
 
                 <div className="container-section">
-                    <p style={{fontSize: "1.5rem"}}>
+                    <p>
                         I’m a programmer working mostly with <b>Java</b> and <b>Javascript</b> and
                         strive for <b>simplicity</b> and <b>usability</b> in UI/UX design.
                         <br/><br/>

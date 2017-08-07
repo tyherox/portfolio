@@ -6,6 +6,7 @@ import React, { Component }from 'react';
 import { RouteTransition } from 'react-router-transition';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {Button} from 'react-bootstrap';
 import reducer from '../../reducers/projectSelection';
 
 
@@ -23,6 +24,9 @@ export default class App extends Component {
         return (
             <Provider store={store}>
                 <div id = "masterContainer">
+                    {/*<div id="languageSelection">
+                     <Button className="emptyButton" id="languageSelection-button">English/한국어</Button>
+                     </div>*/}
                     <RouteTransition
                         pathname={this.props.location.pathname}
                         atEnter={{ opacity: 0 }}
