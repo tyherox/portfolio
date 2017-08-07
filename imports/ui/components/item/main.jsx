@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import {browserHistory} from 'react-router';
 import {Grid, Row, Col, Button, ResponsiveEmbed, Label} from 'react-bootstrap';
+import LazyLoad from 'react-lazy-load';
 import './style.css';
 
 export default class Item extends Component{
@@ -33,9 +34,14 @@ export default class Item extends Component{
                  onMouseEnter={()=> this.setState({hover: true})}
                  onMouseLeave={()=> this.setState({hover: false})}
                  onClick={this.handleClick}>
-                <ResponsiveEmbed a16by9>
-                    <embed style={{filter: "brightness(.95)"}} src={"/assets/"+this.props.image} />
-                </ResponsiveEmbed>
+
+                <LazyLoad>
+                    <img style={{
+                        width: "100%",
+                        marginRight: "10px",
+                        verticalAlign: "middle"
+                    }}src={"/assets/" + this.props.image}/>
+                </LazyLoad>
                 <div className="itemContainer-description">
                     <p className="itemContainer-description-subTitle">{this.props.description}</p>
                     <b className="itemContainer-description-title" ref="title"

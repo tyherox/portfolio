@@ -10,6 +10,7 @@ import {connectAdvanced} from "react-redux";
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col, FormGroup, Button, ResponsiveEmbed} from 'react-bootstrap';
 import FlipMove from 'react-flip-move';
+import LazyLoad from 'react-lazy-load';
 
 
 var key = 0;
