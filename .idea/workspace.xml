@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21ecce97-ff99-4070-b5f6-a80327481663" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_browser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" afterPath="$PROJECT_DIR$/.idea/libraries/meteor_packages_auto_import_npm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/lightBox/main.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/lightBox/main.jsx" />
-    </list>
+    <list default="true" id="21ecce97-ff99-4070-b5f6-a80327481663" name="Default" comment="" />
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -506,12 +502,12 @@
       <workItem from="1501725985226" duration="191000" />
       <workItem from="1501730593671" duration="1766000" />
       <workItem from="1502083535465" duration="587000" />
-      <workItem from="1502084204253" duration="1916000" />
+      <workItem from="1502084204253" duration="1969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211829000" />
+    <option name="totallyTimeSpent" value="211882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
