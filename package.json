@@ -25,6 +25,7 @@
     "react-router-scroll": "^0.4.2",
     "react-router-transition": "^0.1.1",
     "react-scroll": "^1.5.4",
+    "react-springy-parallax": "^1.0.11",
     "redux": "^3.7.1"
   }
 }

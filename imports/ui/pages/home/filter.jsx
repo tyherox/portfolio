@@ -22,11 +22,11 @@ class Filters extends Component {
         console.log("Handling:", skill, this.props.activeFilters.toArray());
 
         if(this.props.activeFilters.includes(skill)){
-            console.log("DOES HAVE!");
+            console.log("Currently Active: Removing Filter");
             this.props.reduxActions.removeFilter(skill);
         }
         else {
-            console.log("DOESN'T HAVE!");
+            console.log("Not Active: Adding Filter");
             this.props.reduxActions.addFilter(skill);
         }
 

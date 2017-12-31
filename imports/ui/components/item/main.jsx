@@ -35,7 +35,7 @@ export default class Item extends Component{
                  onMouseLeave={()=> this.setState({hover: false})}
                  onClick={this.handleClick}>
 
-                <LazyLoad>
+                <LazyLoad placeholder={<Placeholder />} once>
                     <img style={{
                         width: "100%",
                         marginRight: "10px",
@@ -49,5 +49,14 @@ export default class Item extends Component{
                 </div>
             </div>
         )
+    }
+}
+
+class Placeholder extends React.Component{
+    render(){
+        console.log("WTF");
+        return <div className='itemContainer-placeholder'>
+            "TESTING
+        </div>
     }
 }

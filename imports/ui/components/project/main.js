@@ -3,7 +3,6 @@
  */
 
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {Button, Label} from 'react-bootstrap';
 
 export default class ProjectComponent extends Component{

@@ -3,7 +3,6 @@
  */
 
 import {fromJS} from 'immutable';
-import * as SKILLS from "../skills";
 import Trestle from './trestle';
 import Ryestory from './ryestory';
 import Revomake from './revomake';
@@ -11,5 +10,7 @@ import EACEF from './eacef';
 import Bard from './bard';
 import Smith from './smith';
 import Scribe from './scribe';
+import Mandum from './mandum';
+import Vread from './vread';
 
-export default fromJS([Revomake, Trestle, Ryestory, EACEF, Bard, Smith, Scribe]);
+export default fromJS([Vread, Mandum, Revomake, Trestle, Ryestory, EACEF, Bard, Smith, Scribe]);

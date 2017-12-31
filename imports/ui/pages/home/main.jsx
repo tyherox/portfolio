@@ -3,22 +3,14 @@
  */
 
 import React, { Component } from 'react';
-import Item from '../../components/item/main.jsx';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import * as Actions from "../../../actions/projectSelection";
-import {connectAdvanced} from "react-redux";
-import {bindActionCreators} from 'redux';
-import {Grid, Row, Col, FormGroup, Button, ResponsiveEmbed} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import Projects from './projects.jsx';
 import Filters from './filter.jsx';
-import * as Skills from '../../../constants/skills';
-var key = 0;
 
 export default class HomePage extends Component {
 
     constructor(props){
         super(props);
-
         this.state = {filter: []}
     }
 
@@ -37,7 +29,9 @@ export default class HomePage extends Component {
                 <div className="container-section">
                     <p>
                         I’m a programmer working mostly with <b>Java</b> and <b>Javascript</b> and
-                        strive for <b>simplicity</b> and <b>usability</b> in UI/UX design.
+                        strive for <b>simplicity</b> and <b>usability</b> in UI/UX design. I enjoy starting random projects
+                      and trying <b>new</b> things out. Although I mostly program and develop, I also invest heavily in <b>design</b> and keep my eye
+                      out for <b>business opportunities</b>.
                         <br/><br/>
                         Oh, and I'm a huge fan of <b>video games</b>, <b>The Lord of the Rings</b>, and <b>Star Wars</b>.
                     </p>

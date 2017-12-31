@@ -19,7 +19,7 @@ var about =
 
         <br/>
 
-        <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>ETA: 3 months</p>
+        <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>ETA: Indefinite hold due to client</p>
         <h2 className="category-title">Project in Progress</h2>
 
         <br/>
@@ -48,14 +48,13 @@ var about =
 
 var content =
     <div key="1">
-
         <h1 className="sectionTitle-alt">Project in Progress</h1>
     </div>;
 
 
 export default {
     title: "Revomake",
-    skills: [SKILLS.BOOTSTRAP, SKILLS.HTML, SKILLS.CSS, SKILLS.JAVASCRIPT, SKILLS.METEOR_JS, SKILLS.AWS_S3,SKILLS.MONGO_DB],
+    skills: [SKILLS.BOOTSTRAP, SKILLS.HTML, SKILLS.CSS, SKILLS.JAVASCRIPT, SKILLS.METEOR_JS, SKILLS.AWS,SKILLS.MONGO_DB],
     image: "revomake/gallery1.png",
     description: "3D Printing File Sharing",
     about : about,
