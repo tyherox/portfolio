@@ -4,6 +4,7 @@
 
 import {fromJS} from 'immutable';
 import Trestle from './trestle';
+import Ryeboard from './ryeboard';
 import Ryestory from './ryestory';
 import Revomake from './revomake';
 import EACEF from './eacef';
@@ -13,4 +14,4 @@ import Scribe from './scribe';
 import Mandum from './mandum';
 import Vread from './vread';
 
-export default fromJS([Vread, Mandum, Revomake, Trestle, Ryestory, EACEF, Bard, Smith, Scribe]);
+export default fromJS([Ryeboard, Vread, Mandum, Revomake, Trestle, Ryestory, EACEF, Bard, Smith, Scribe]);

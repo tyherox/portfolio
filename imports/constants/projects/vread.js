@@ -20,7 +20,7 @@ var about =
         <br/>
 
         <p className="itemContainer-description-subTitle" style={{color: "lightGray"}}>ETA: September 2018</p>
-        <h2 className="category-title">Final Product</h2>
+        <h2 className="category-title">Project in Progress</h2>
 
         <br/>
 
